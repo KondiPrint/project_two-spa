@@ -1,82 +1,72 @@
 import styles from "./maintainable.module.scss";
 import Link from "next/link";
+import { getData } from "../getData";
 
-export default function Maintainable() {
+export default async function Maintainable() {
+  const data = await getData();
   return (
     <>
-      <header className={styles.pageheader}>
-        <nav className={styles.pageheader__nav}>
-          <menu className={styles.pageheader__menu}>
-            <li className={styles.pageheader__menu_left}>
-              <Link href={"/"}>
-                <img
-                  src="../../../assets/navigation/back.png"
-                  alt="Back-button"
-                />
-              </Link>
-            </li>
-            <li className={styles.pageheader__menu_right}>
-              <Link href={"/whatwedo"}>
-                <img
-                  className={styles.pageheader__menu_direction}
-                  src="../../../assets/navigation/nav-1.png"
-                  alt=""
-                />
-              </Link>
-              <div className={styles.pageheader__menu_current}>
-                <img src="../../../assets/navigation/nav-2-where.png" alt="" />
-                <img src="../../../assets/navigation/nav-2.png" alt="" />
-              </div>
-              <Link href={"/getintouch"}>
-                <img
-                  className={styles.pageheader__menu_direction}
-                  src="../../../assets/navigation/nav-3.png"
-                  alt=""
-                />
-              </Link>
-            </li>
-          </menu>
-        </nav>
-      </header>
-      <main>
-        <section className={styles.content__section}>
-          <div className={styles.content__img_container}>
-            <img
-              src="../../assets/front-mobil/weba-3-mobil-maintainable.png"
-              alt="Maintainable-banner"
-            />
-          </div>
-          <div className={styles.content__text_container}>
-            <h1>
-              Keeping your all <span>upto date</span> ...
-            </h1>
-            <p>
-              But I must explain to you how all this mistaken idea of denouncing
-            </p>
-            <p>
-              pleasure and prasing pain was born and I will give you a complete
-              account of the system, and expound the actual teachings of the
-              great explorer of the truth, the master-builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter consequences that are.
-            </p>
-            <p>
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and prasing pain was born and I will give you a complete
-              account of the system, and expound the actual teachings of the
-              great explorer of the truth, the master-builder of human
-              happiness.
-            </p>
-          </div>
-          <div className={styles.content__logo_container}>
-            <Link href={"/"}>
-
-            <img src="../../assets/logo/logo-a.png" alt="Logo-a" />
-            </Link>
-          </div>
-        </section>
-      </main>
+      {data &&
+        data.nav_mobile_data.map((item:any, index:number) => (
+          <>
+            <header className={styles.pageheader}>
+              <nav className={styles.pageheader__nav}>
+                <menu className={styles.pageheader__menu}>
+                  <li className={styles.pageheader__menu_left}>
+                    <Link href={"/"}>
+                      <img
+                      src={item.back_btn}
+                      alt={item.back_btn__alt}
+                      />
+                    </Link>
+                  </li>
+                  <li className={styles.pageheader__menu_right}>
+                    <Link href={"/whatwedo"}>
+                    <img
+                    className={styles.pageheader__menu_direction}
+                    src={item.whatwedo_btn}
+                    alt={item.whatwedo_btn_alt}
+                    />
+                    </Link>
+                    <div className={styles.pageheader__menu_current}>
+                      <img src={item.maintainable_btn_highlight} alt="" />
+                      <img src={item.maintainable_btn} alt={item.maintainable_btn_alt} />
+                    </div>
+                    <Link href={"/getintouch"}>
+                      <img className={styles.pageheader__menu_direction} src={item.getintouch_btn} alt={item.getintouch_btn_alt} />
+                    </Link>
+                  </li>
+                </menu>
+              </nav>
+            </header>
+          </>
+      ))}
+      {data &&
+        data.maintainable_mobile_data.map((item:any, index:number) => (
+          <>
+            <main>
+              <section className={styles.content__section}>
+                <div className={styles.content__img_container}>
+                  <img
+                  src={item.img_banner}
+                  alt={item.img_banner_alt}
+                  />
+                </div>
+                <div className={styles.content__text_container}>
+                  <h1>{item.title} <span>{item.title_2}</span> {item.title_3}</h1>
+                  <p>{item.text_1}</p>
+                  <p>{item.text_2}</p>
+                  <p>{item.text_3}</p>
+                </div>
+                <div className={styles.content__logo_container}>
+                  <Link href={"/"}>
+                    <img src={item.maintainable_logo} alt={item.maintainable_logo_alt} />
+                  </Link>
+                </div>
+              </section>
+            </main>
+          </>
+      ))}
     </>
   );
 }

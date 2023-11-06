@@ -1,52 +1,106 @@
 {
-  "data": [
+  "nav_mobile_data": [
+    {
+      "back_btn": "../../../assets/navigation/back.png",
+      "back_btn__alt": "Back-button",
+      "whatwedo_btn": "../../../assets/navigation/nav-1.png",
+      "whatwedo_btn_highlight": "../../../assets/navigation/nav-1-where.png",
+      "whatwedo_btn_alt": "What we do btn",
+      "maintainable_btn": "../../../assets/navigation/nav-2.png",
+      "maintainable_btn_highlight": "../../../assets/navigation/nav-2-where.png",
+      "maintainable_btn_alt": "Maintainable btn",
+      "getintouch_btn": "../../../assets/navigation/nav-3.png",
+      "getintouch_btn_highlight": "../../../assets/navigation/nav-3-where.png",
+      "getintouch_btn_alt": "Get in touch btn"
+    }
+  ],
+  "home_mobile_data": [
+    {
+      "logo": "../../assets/logo/logo-final.png",
+      "logo_alt": "Home logo",
+      "whatwedo_banner": "../../assets/front-mobil/weba-2-mobil-whatwedo.png",
+      "whatwedo_banner_alt": "What we do-banner",
+      "maintainable_banner": "../../assets/front-mobil/weba-3-mobil-maintainable.png",
+      "maintainable_banner_alt": "maintainable-banner",
+      "getintouch_banner": "../../assets/front-mobil/weba-mobil.getintouch.png",
+      "getintouch_banner_alt": "getintouch-banner"
+    }
+  ],
+  "getintouch_mobile_data": [
     {
       "id": 1,
-      "created_at": "2023-11-01T09:13:10.891833+00:00",
-      "name": "Simon",
-      "lastname": "Nielsen"
-    },
+      "img_banner": "../../assets/front-mobil/weba-mobil.getintouch.png",
+      "img_banner_alt": "Get in touch-banner",
+      "title": "There for you and",
+      "title_2":"care for you",
+      "title_3":"...",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing <br /> pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of thegreat explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_2": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      "contact_img_1": "../../assets/front-desktop/whatwedo-small.png",
+      "contact_img_1_alt": "What we do small icon",
+      "contact_img_1_mail": "lt@coolish.com",
+      "contact_img_2": "../../assets/front-desktop/maintainable-small.png",
+      "contact_img__2_alt": "Maintainable small icon",
+      "contact_img_2_mail": "pr@coolish.com",
+      "contact_img_3": "../../assets/front-desktop/getintouch-small.png",
+      "contact_img__3_alt": "Get in touch small icon",
+      "contact_img_3_mail": "mn@coolish.com",
+      "getintouch_logo": "../../assets/logo/logo-b.png",
+      "getintouch_logo_alt": "Logo-b"
+
+    }
+  ],
+  "getintouch_desktop_data": [
     {
       "id": 2,
       "created_at": "2023-11-01T09:13:30.431867+00:00",
       "name": "Simone",
       "lastname": "Rasmussen"
-    },
+    }
+  ],
+  "maintainable_mobile_data": [
+    {
+      "id": 2,
+      "img_banner": "../../assets/front-mobil/weba-3-mobil-maintainable.png",
+      "img_banner_alt": "Maintainable-banner",
+      "title": "Keeping your all",
+      "title_2": "upto date",
+      "title_3": "...",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing",
+      "text_2": "pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_3": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      "maintainable_logo": "../../assets/logo/logo-a.png",
+      "maintainable_logo_alt": "Logo-a"
+    }
+  ],
+  "maintainable_desktop_data": [
+    {
+      "id": 2,
+      "created_at": "2023-11-01T09:13:30.431867+00:00",
+      "name": "Simone",
+      "lastname": "Rasmussen"
+    }
+  ],
+  "whatwedo_mobile_data": [
+    {
+      "id": 3,
+      "img_banner": "../../assets/front-mobil/weba-2-mobil-whatwedo.png",
+      "img_banner_alt": "What we do-banner",
+      "title": "Design is the",
+      "title_2": "matter of choice",
+      "title_3": "...",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing <br /> pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_2": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      "whatwedo_logo": "../../assets/logo/logo-a.png",
+      "whatwedo_logo_alt": "Logo-a"
+    }
+  ],
+  "whatwedo_desktop_data": [
     {
       "id": 3,
       "created_at": "2023-11-01T09:13:52.163107+00:00",
       "name": "Greta",
       "lastname": "Gregersen"
-    },
-    {
-      "id": 4,
-      "created_at": "2023-11-01T09:14:06.230299+00:00",
-      "name": "Rasmus",
-      "lastname": "Iversen"
-    },
-    {
-      "id": 5,
-      "created_at": "2023-11-01T09:14:27.274925+00:00",
-      "name": "Thomas",
-      "lastname": "Olsen"
-    },
-    {
-      "id": 9,
-      "created_at": "2023-11-01T11:53:46.027282+00:00",
-      "name": "Stefanie",
-      "lastname": "Heinemann"
-    },
-    {
-      "id": 10,
-      "created_at": "2023-11-02T18:25:11.851013+00:00",
-      "name": "Cameron",
-      "lastname": "Hardy"
-    },
-    {
-      "id": 11,
-      "created_at": "2023-11-02T18:26:42.522907+00:00",
-      "name": "Scott",
-      "lastname": "Kinsey"
     }
   ]
 }

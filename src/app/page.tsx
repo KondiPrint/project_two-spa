@@ -1,40 +1,50 @@
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { getData } from "./getData";
 
-export default function Home() {
+export default async function Home() {
+  const data = await getData();
+  console.log(data)
   return (
-    <main>
-      <section className={styles.content__section}>
-        <div className={styles.content__logo_container}>
-          <Link href={"/"}>
-            <img src="../../assets/logo/logo-final.png" alt="Logo" />
-          </Link>
-        </div>
-        <div className={styles.content__img_container}>
-          <Link href={"/whatwedo"}>
-            <img
-              src="../../assets/front-mobil/weba-2-mobil-whatwedo.png"
-              alt="What we do-banner"
-            />
-          </Link>
-        </div>
-        <div className={styles.content__img_container}>
-          <Link href={"/maintainable"}>
-            <img
-              src="../../assets/front-mobil/weba-3-mobil-maintainable.png"
-              alt="Maintainable-banner"
-            />
-          </Link>
-        </div>
-        <div className={styles.content__img_container}>
-          <Link href={"/getintouch"}>
-            <img
-              src="../../assets/front-mobil/weba-mobil.getintouch.png"
-              alt="Get in touch-banner"
-            />
-          </Link>
-        </div>
-      </section>
-    </main>
+    <>
+    {data &&
+        data.home_mobile_data.map((item:any, index:number) => (
+          <>
+            <main>
+              <section className={styles.content__section}>
+                <div className={styles.content__logo_container}>
+                  <Link href={"/"}>
+                    <img src={item.logo} alt={item.logo_alt} />
+                  </Link>
+                </div>
+                <div className={styles.content__img_container}>
+                  <Link href={"/whatwedo"}>
+                    <img
+                    src={item.whatwedo_banner}
+                    alt={item.whatwedo_alt}
+                    />
+                  </Link>
+                </div>
+                <div className={styles.content__img_container}>
+                  <Link href={"/maintainable"}>
+                    <img
+                    src={item.maintainable_banner}
+                    alt={item.maintainable_alt}
+                    />
+                  </Link>
+                </div>
+                <div className={styles.content__img_container}>
+                  <Link href={"/getintouch"}>
+                    <img
+                    src={item.getintouch_banner}
+                    alt={item.getintouch_alt}
+                    />
+                  </Link>
+                </div>
+              </section>
+            </main>
+          </>
+        ))}
+    </>
   );
 }
