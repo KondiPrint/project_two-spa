@@ -41,7 +41,6 @@
   ],
   "getintouch_mobile_data": [
     {
-      "id": 1,
       "img_banner": "../../assets/front-mobil/weba-mobil.getintouch.png",
       "img_banner_alt": "Get in touch-banner",
       "title": "There for you and",
@@ -64,7 +63,6 @@
   ],
   "getintouch_desktop_data": [
     {
-      "id": 1,
       "img_banner": "../../assets/front-desktop/front-getintouch-link.png",
       "img_banner_alt": "Get in touch-banner",
       "title": "There for you and",
@@ -87,7 +85,6 @@
   ],
   "maintainable_mobile_data": [
     {
-      "id": 2,
       "img_banner": "../../assets/front-mobil/weba-3-mobil-maintainable.png",
       "img_banner_alt": "Maintainable-banner",
       "title": "Keeping your all",
@@ -102,7 +99,6 @@
   ],
   "maintainable_desktop_data": [
     {
-      "id": 2,
       "img_banner": "../../assets/front-desktop/front-maintainable-link.png",
       "img_banner_alt": "Maintainable-banner",
       "title": "Keeping your all",
@@ -116,7 +112,6 @@
   ],
   "whatwedo_mobile_data": [
     {
-      "id": 3,
       "img_banner": "../../assets/front-mobil/weba-2-mobil-whatwedo.png",
       "img_banner_alt": "What we do-banner",
       "title": "Design is the",
@@ -130,7 +125,6 @@
   ],
   "whatwedo_desktop_data": [
     {
-      "id": 3,
       "img_banner": "../../assets/front-desktop/front-what-we-do-link.png",
       "img_banner_alt": "What we do-banner",
       "title": "Design is the",

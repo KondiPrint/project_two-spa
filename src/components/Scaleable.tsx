@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useState, useEffect } from "react";
 import GetInTouch_MobileView from "./Mobile_view/GetInTouch/GetInTouch_MobileView";
@@ -9,8 +9,13 @@ import GetInTouch_DesktopView from "./Desktop_view/GetInTouch/GetInTouch_Desktop
 import Maintainable_DesktopView from "./Desktop_view/Maintainable/Maintainable_DesktopView";
 import WhatWeDo_DesktopView from "./Desktop_view/WhatWeDo/WhatWeDo_DesktopView";
 import Desktop from "./Mobile_home"
+import { TopLevel } from "@/lib/data_interface";
 
-const Content = ({ data:any }) => {
+interface ContentProps {
+  data: TopLevel;
+}
+
+const Content: React.FC<ContentProps> = ({ data }) => {
   const [dimensions, setDimensions] = useState(0);
 
   useEffect(() => {

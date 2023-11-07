@@ -9,7 +9,7 @@ export default async function GetInTouch() {
     <div className={styles.backgroundcolor}>
 
       {data &&
-        data.nav_mobile_data.map((item:any, index:number) => (
+        data.nav_data.map((item:any, index:number) => (
           <>
             <header className={styles.pageheader}>
               <nav className={styles.pageheader__nav}>

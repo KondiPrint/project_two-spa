@@ -10,7 +10,7 @@ export default async function GetInTouch() {
       {data &&
         data.nav_data.map((item:any, index:number) => (
           <>
-            <header className={styles.pageheader}>
+            <header className={styles.pageheader} key={item.nav_data}>
               <nav className={styles.pageheader__nav}>
                 <menu className={styles.pageheader__menu}>
                   <li className={styles.pageheader__menu_left}>
@@ -49,7 +49,7 @@ export default async function GetInTouch() {
       {data &&
         data.getintouch_mobile_data.map((item:any, index:number) => (
           <>
-            <main>
+            <main key={item.getintouch_mobile_data}>
               <section className={styles.content__section}>
                 <div className={styles.content__img_container}>
                   <img
