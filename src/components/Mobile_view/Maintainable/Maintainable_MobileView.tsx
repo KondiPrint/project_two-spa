@@ -6,8 +6,9 @@ export default async function Maintainable() {
   const data = await getData();
   return (
     <>
+    <div>
       {data &&
-        data.nav_mobile_data.map((item:any, index:number) => (
+        data.nav_data.map((item:any, index:number) => (
           <>
             <header className={styles.pageheader}>
               <nav className={styles.pageheader__nav}>
@@ -67,6 +68,7 @@ export default async function Maintainable() {
             </main>
           </>
       ))}
+    </div>
     </>
   );
 }

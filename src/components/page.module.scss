@@ -1,0 +1,25 @@
+.content__section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-inline: 1rem;
+  justify-content: center;
+}
+
+.content__img_container {
+  width: 100%;
+  margin-bottom: 20px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.content__logo_container {
+  margin: 0 0 -10px -15px;
+  width: 100%;
+  img {
+    width: 125px;
+  }
+}

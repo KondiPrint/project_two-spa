@@ -1,5 +1,5 @@
 {
-  "nav_mobile_data": [
+  "nav_data": [
     {
       "back_btn": "../../../assets/navigation/back.png",
       "back_btn__alt": "Back-button",
@@ -17,13 +17,26 @@
   "home_mobile_data": [
     {
       "logo": "../../assets/logo/logo-final.png",
-      "logo_alt": "Home logo",
+      "logo_alt": "Home logo mobile",
       "whatwedo_banner": "../../assets/front-mobil/weba-2-mobil-whatwedo.png",
       "whatwedo_banner_alt": "What we do-banner",
       "maintainable_banner": "../../assets/front-mobil/weba-3-mobil-maintainable.png",
       "maintainable_banner_alt": "maintainable-banner",
       "getintouch_banner": "../../assets/front-mobil/weba-mobil.getintouch.png",
       "getintouch_banner_alt": "getintouch-banner"
+    }
+  ],
+  "home_desktop_data": [
+    {
+      "logo": "../../assets/logo/logo-final.png",
+      "logo_alt": "Home logo desktop",
+      "whatwedo_card": "../../assets/front-desktop/front-what-we-do.png",
+      "whatwedo_card_alt": "What we do-card",
+      "maintainable_card": "../../assets/front-desktop/front-maintainable.png",
+      "maintainable_card_alt": "Maintainable-card",
+      "getintouch_card": "../../assets/front-desktop/front-get-in-touch.png",
+      "getintouch_card_alt": "Get In Touch-card",
+      "bottom_text": "And yet... more to come"
     }
   ],
   "getintouch_mobile_data": [
@@ -47,15 +60,29 @@
       "contact_img_3_mail": "mn@coolish.com",
       "getintouch_logo": "../../assets/logo/logo-b.png",
       "getintouch_logo_alt": "Logo-b"
-
     }
   ],
   "getintouch_desktop_data": [
     {
-      "id": 2,
-      "created_at": "2023-11-01T09:13:30.431867+00:00",
-      "name": "Simone",
-      "lastname": "Rasmussen"
+      "id": 1,
+      "img_banner": "../../assets/front-desktop/front-getintouch-link.png",
+      "img_banner_alt": "Get in touch-banner",
+      "title": "There for you and",
+      "title_2":"care for you",
+      "title_3":"...",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing",
+      "text_2": "pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of thegreat explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_3": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      "contact_img_1": "../../assets/front-desktop/whatwedo-small.png",
+      "contact_img_1_alt": "What we do small icon",
+      "contact_img_1_mail": "lt@coolish.com",
+      "contact_img_2": "../../assets/front-desktop/maintainable-small.png",
+      "contact_img__2_alt": "Maintainable small icon",
+      "contact_img_2_mail": "pr@coolish.com",
+      "contact_img_3": "../../assets/front-desktop/getintouch-small.png",
+      "contact_img__3_alt": "Get in touch small icon",
+      "contact_img_3_mail": "mn@coolish.com",
+      "bottom_right_text": "GetInTouch"
     }
   ],
   "maintainable_mobile_data": [
@@ -76,9 +103,15 @@
   "maintainable_desktop_data": [
     {
       "id": 2,
-      "created_at": "2023-11-01T09:13:30.431867+00:00",
-      "name": "Simone",
-      "lastname": "Rasmussen"
+      "img_banner": "../../assets/front-desktop/front-maintainable-link.png",
+      "img_banner_alt": "Maintainable-banner",
+      "title": "Keeping your all",
+      "title_2": "upto date",
+      "title_3": "...",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing",
+      "text_2": "pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_3": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      "bottom_right_text": "MaintainAble"
     }
   ],
   "whatwedo_mobile_data": [
@@ -89,7 +122,7 @@
       "title": "Design is the",
       "title_2": "matter of choice",
       "title_3": "...",
-      "text_1": "But I must explain to you how all this mistaken idea of denouncing <br /> pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
       "text_2": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
       "whatwedo_logo": "../../assets/logo/logo-a.png",
       "whatwedo_logo_alt": "Logo-a"
@@ -98,9 +131,15 @@
   "whatwedo_desktop_data": [
     {
       "id": 3,
-      "created_at": "2023-11-01T09:13:52.163107+00:00",
-      "name": "Greta",
-      "lastname": "Gregersen"
+      "img_banner": "../../assets/front-desktop/front-what-we-do-link.png",
+      "img_banner_alt": "What we do-banner",
+      "title": "Design is the",
+      "title_2": "matter of choice",
+      "title_3": "...",
+      "text_1": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "text_2": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      "text_3": "because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
+      "bottom_right_text": "What We Do"
     }
   ]
 }

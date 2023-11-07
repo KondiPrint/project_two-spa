@@ -6,6 +6,7 @@ export default async function Maintainable() {
   const data = await getData();
   return (
     <>
+    <div className={styles.backgroundcolor}>
       {data &&
         data.nav_mobile_data.map((item:any, index:number) => (
           <>
@@ -19,8 +20,7 @@ export default async function Maintainable() {
                       alt={item.back_btn__alt}
                       />
                     </Link>
-                  </li>
-                  <li className={styles.pageheader__menu_right}>
+                  <div className={styles.pageheader__menu_right}>
                     <Link href={"/whatwedo"}>
                     <img
                     className={styles.pageheader__menu_direction}
@@ -29,12 +29,13 @@ export default async function Maintainable() {
                     />
                     </Link>
                     <div className={styles.pageheader__menu_current}>
-                      <img src={item.maintainable_btn_highlight} alt="" />
                       <img src={item.maintainable_btn} alt={item.maintainable_btn_alt} />
+                      <img src={item.maintainable_btn_highlight} alt="" />
                     </div>
                     <Link href={"/getintouch"}>
                       <img className={styles.pageheader__menu_direction} src={item.getintouch_btn} alt={item.getintouch_btn_alt} />
                     </Link>
+                  </div>
                   </li>
                 </menu>
               </nav>
@@ -42,7 +43,7 @@ export default async function Maintainable() {
           </>
       ))}
       {data &&
-        data.maintainable_mobile_data.map((item:any, index:number) => (
+        data.maintainable_desktop_data.map((item:any, index:number) => (
           <>
             <main>
               <section className={styles.content__section}>
@@ -58,15 +59,14 @@ export default async function Maintainable() {
                   <p>{item.text_2}</p>
                   <p>{item.text_3}</p>
                 </div>
-                <div className={styles.content__logo_container}>
-                  <Link href={"/"}>
-                    <img src={item.maintainable_logo} alt={item.maintainable_logo_alt} />
-                  </Link>
+                <div className={styles.buttom_right}>
+                  <p>{item.bottom_right_text}</p>
                 </div>
               </section>
             </main>
           </>
       ))}
+    </div>
     </>
   );
 }

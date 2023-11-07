@@ -6,6 +6,7 @@ export default async function WhatWeDo() {
   const data = await getData();
   return (
     <>
+    <div className={styles.backgroundcolor}>
       {data &&
         data.nav_mobile_data.map((item:any, index:number) => (
           <>
@@ -19,11 +20,10 @@ export default async function WhatWeDo() {
                       alt={item.back_btn__alt}
                       />
                     </Link>
-                  </li>
-                  <li className={styles.pageheader__menu_right}>
+                  <div className={styles.pageheader__menu_right}>
                     <div className={styles.pageheader__menu_current}>
-                      <img src={item.whatwedo_btn_highlight} alt="" />
                       <img src={item.whatwedo_btn} alt={item.whatwedo_btn_alt} />
+                      <img src={item.whatwedo_btn_highlight} alt="" />
                     </div>
                     <Link href={"/maintainable"}>
                     <img
@@ -35,6 +35,7 @@ export default async function WhatWeDo() {
                     <Link href={"/getintouch"}>
                       <img className={styles.pageheader__menu_direction} src={item.getintouch_btn} alt={item.getintouch_btn_alt} />
                     </Link>
+                  </div>
                   </li>
                 </menu>
               </nav>
@@ -42,7 +43,7 @@ export default async function WhatWeDo() {
           </>
       ))}
       {data &&
-        data.whatwedo_mobile_data.map((item:any, index:number) => (
+        data.whatwedo_desktop_data.map((item:any, index:number) => (
           <>
             <main>
               <section className={styles.content__section}>
@@ -56,16 +57,16 @@ export default async function WhatWeDo() {
                   <h1>{item.title} <span>{item.title_2}</span> {item.title_3}</h1>
                   <p>{item.text_1}</p>
                   <p>{item.text_2}</p>
+                  <p>{item.text_3}</p>
                 </div>
-                <div className={styles.content__logo_container}>
-                  <Link href={"/"}>
-                    <img src="../../assets/logo/logo-a.png" alt="Logo-a" />
-                  </Link>
+                <div className={styles.buttom_right}>
+                  <p>{item.bottom_right_text}</p>
                 </div>
               </section>
             </main>
           </>
       ))}
+    </div>
     </>
   );
 }
