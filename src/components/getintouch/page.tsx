@@ -1,9 +1,12 @@
 import styles from "./getintouch.module.scss";
 import Link from "next/link";
-import { getData } from "@/app/getData";
+import { TopLevel } from "@/lib/data_interface";
 
-export default async function GetInTouch() {
-  const data = await getData();
+interface ContentProps {
+  data: TopLevel;
+}
+
+const getintouch_home: React.FC<ContentProps> = ({ data }) => {
   return (
     <>
     <div className={styles.backgroundcolor}>
@@ -11,7 +14,7 @@ export default async function GetInTouch() {
       {data &&
         data.nav_data.map((item:any, index:number) => (
           <>
-            <header className={styles.pageheader}>
+            <header className={styles.pageheader} key={index}>
               <nav className={styles.pageheader__nav}>
                 <menu className={styles.pageheader__menu}>
                   <li className={styles.pageheader__menu_left}>
@@ -50,7 +53,7 @@ export default async function GetInTouch() {
       {data &&
         data.getintouch_desktop_data.map((item:any, index:number) => (
           <>
-            <main>
+            <main key={index}>
               <section className={styles.content__section}>
                 <div className={styles.content__img_container}>
                   <img
@@ -105,3 +108,4 @@ export default async function GetInTouch() {
     </>
   );
 }
+export default getintouch_home;

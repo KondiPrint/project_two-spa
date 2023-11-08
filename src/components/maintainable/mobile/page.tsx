@@ -1,16 +1,20 @@
-import styles from "./whatwedo.module.scss";
+import styles from "./maintainable.module.scss";
 import Link from "next/link";
-import { getData } from "@/app/getData";
+import { TopLevel } from "@/lib/data_interface";
 
-export default async function WhatWeDo() {
-  const data = await getData();
+interface ContentProps {
+  data: TopLevel;
+}
+
+const maintainable_mobile: React.FC<ContentProps> = ({ data }) => {
+
   return (
     <>
-    <div className={styles.backgroundcolor}>
+    <div>
       {data &&
         data.nav_data.map((item:any, index:number) => (
           <>
-            <header className={styles.pageheader}>
+            <header className={styles.pageheader} key={index}>
               <nav className={styles.pageheader__nav}>
                 <menu className={styles.pageheader__menu}>
                   <li className={styles.pageheader__menu_left}>
@@ -20,22 +24,22 @@ export default async function WhatWeDo() {
                       alt={item.back_btn__alt}
                       />
                     </Link>
-                  <div className={styles.pageheader__menu_right}>
-                    <div className={styles.pageheader__menu_current}>
-                      <img src={item.whatwedo_btn} alt={item.whatwedo_btn_alt} />
-                      <img src={item.whatwedo_btn_highlight} alt="" />
-                    </div>
-                    <Link href={"/maintainable"}>
+                  </li>
+                  <li className={styles.pageheader__menu_right}>
+                    <Link href={"/whatwedo"}>
                     <img
                     className={styles.pageheader__menu_direction}
-                    src={item.maintainable_btn}
-                    alt={item.maintainable_btn_alt}
+                    src={item.whatwedo_btn}
+                    alt={item.whatwedo_btn_alt}
                     />
                     </Link>
+                    <div className={styles.pageheader__menu_current}>
+                      <img src={item.maintainable_btn_highlight} alt="" />
+                      <img src={item.maintainable_btn} alt={item.maintainable_btn_alt} />
+                    </div>
                     <Link href={"/getintouch"}>
                       <img className={styles.pageheader__menu_direction} src={item.getintouch_btn} alt={item.getintouch_btn_alt} />
                     </Link>
-                  </div>
                   </li>
                 </menu>
               </nav>
@@ -43,9 +47,9 @@ export default async function WhatWeDo() {
           </>
       ))}
       {data &&
-        data.whatwedo_desktop_data.map((item:any, index:number) => (
+        data.maintainable_mobile_data.map((item:any, index:number) => (
           <>
-            <main>
+            <main key={index}>
               <section className={styles.content__section}>
                 <div className={styles.content__img_container}>
                   <img
@@ -59,8 +63,10 @@ export default async function WhatWeDo() {
                   <p>{item.text_2}</p>
                   <p>{item.text_3}</p>
                 </div>
-                <div className={styles.buttom_right}>
-                  <p>{item.bottom_right_text}</p>
+                <div className={styles.content__logo_container}>
+                  <Link href={"/"}>
+                    <img src={item.maintainable_logo} alt={item.maintainable_logo_alt} />
+                  </Link>
                 </div>
               </section>
             </main>
@@ -70,3 +76,4 @@ export default async function WhatWeDo() {
     </>
   );
 }
+export default maintainable_mobile

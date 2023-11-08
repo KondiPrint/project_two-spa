@@ -1,21 +1,23 @@
 "use client"
 
 import React, { useState, useEffect } from "react";
-import GetInTouch_MobileView from "./Mobile_view/GetInTouch/GetInTouch_MobileView";
-import Maintainable_MobileView from "./Mobile_view/Maintainable/Maintainable_MobileView";
-import WhatWeDo_MobileView from "./Mobile_view/WhatWeDo/WhatWeDo_MobileView";
-import Mobile from "./Mobile_home"
-import GetInTouch_DesktopView from "./Desktop_view/GetInTouch/GetInTouch_DesktopView";
-import Maintainable_DesktopView from "./Desktop_view/Maintainable/Maintainable_DesktopView";
-import WhatWeDo_DesktopView from "./Desktop_view/WhatWeDo/WhatWeDo_DesktopView";
-import Desktop from "./Mobile_home"
+import Desktop_home from "./desktop/Desktop_home"
+import GetInTouch from "./getintouch/page";
+import Maintainable from "./maintainable/page";
+import WhatWeDo from "./whatwedo/page";
+import Mobile_home from "./mobile/Mobile_home"
+import GetInTouch_Mobile from "./getintouch/mobile/page";
+import Maintainable_Mobile from "./maintainable/mobile/page";
+import WhatWeDo_Mobile from "./whatwedo/mobile/page";
 import { TopLevel } from "@/lib/data_interface";
+import { usePathname } from "next/navigation";
 
 interface ContentProps {
   data: TopLevel;
 }
 
 const Content: React.FC<ContentProps> = ({ data }) => {
+  const pathname = usePathname()
   const [dimensions, setDimensions] = useState(0);
 
   useEffect(() => {
@@ -34,22 +36,24 @@ const Content: React.FC<ContentProps> = ({ data }) => {
 
   const breakpoint = 620;
 
-  if (dimensions < breakpoint) {
+  if (dimensions > breakpoint) {
     return (
       <>
-        <GetInTouch_MobileView data={data} />
-        <Maintainable_MobileView data={data} />
-        <WhatWeDo_MobileView data={data} />
-        <Desktop data={data}/>
+        {pathname === "/" && <Desktop_home data={data} />}
+        {pathname === "/getintouch" && <GetInTouch data={data} />}
+        {pathname === "/maintainable" && <Maintainable data={data} />}
+        {pathname === "/whatwedo" && <WhatWeDo data={data} />}
+        
       </>
     );
   } else {
     return (
       <>
-        <Mobile data={data}/>
-        <GetInTouch_DesktopView data={data} />
-        <Maintainable_DesktopView data={data} />
-        <WhatWeDo_DesktopView data={data} />
+        {pathname === "/" && <Mobile_home data={data} />}
+        {pathname === "/getintouch" && <GetInTouch_Mobile data={data} />}
+        {pathname === "/maintainable" && <Maintainable_Mobile data={data} />}
+        {pathname === "/whatwedo" && <WhatWeDo_Mobile data={data} />}
+        
       </>
     );
   }

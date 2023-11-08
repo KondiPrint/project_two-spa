@@ -1,9 +1,13 @@
 import styles from "./whatwedo.module.scss";
 import Link from "next/link";
-import { getData } from "@/app/getData";
+import { TopLevel } from "@/lib/data_interface";
 
-export default async function WhatWeDo() {
-  const data = await getData();
+interface ContentProps {
+  data: TopLevel;
+}
+
+const whatwedo_mobile: React.FC<ContentProps> = ({ data }) => {
+
   return (
     <>
     <div>
@@ -71,3 +75,4 @@ export default async function WhatWeDo() {
     </>
   );
 }
+export default whatwedo_mobile

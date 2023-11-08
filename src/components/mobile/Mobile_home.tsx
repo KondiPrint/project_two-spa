@@ -1,15 +1,18 @@
-import styles from "./page.module.scss";
+import styles from "./mobile.module.scss";
 import Link from "next/link";
-import { getData } from "@/app/getData";
+import { TopLevel } from "@/lib/data_interface";
 
-export default async function Home() {
-  const data = await getData();
+interface ContentProps {
+  data: TopLevel;
+}
+
+const Home: React.FC<ContentProps> = ({ data }) => {
   return (
     <>
     {data &&
         data.home_mobile_data.map((item:any, index:number) => (
           <>
-            <main>
+            <main key={index}>
               <section className={styles.content__section}>
                 <div className={styles.content__logo_container}>
                   <Link href={"/"}>
@@ -47,3 +50,4 @@ export default async function Home() {
     </>
   );
 }
+export default Home;
