@@ -1,19 +1,19 @@
 "use client"
 
 import React, { useState, useEffect } from "react";
-import Desktop_home from "./desktop/Desktop_home"
+import Desktop_home from "./desktop/desktop_home"
 import GetInTouch from "./getintouch/page";
 import Maintainable from "./maintainable/page";
 import WhatWeDo from "./whatwedo/page";
-import Mobile_home from "./mobile/Mobile_home"
+import Mobile_home from "./mobile/mobile_home"
 import GetInTouch_Mobile from "./getintouch/mobile/page";
 import Maintainable_Mobile from "./maintainable/mobile/page";
 import WhatWeDo_Mobile from "./whatwedo/mobile/page";
-import { TopLevel } from "@/lib/data_interface";
+import { Components } from "@/lib/data_interface";
 import { usePathname } from "next/navigation";
 
 interface ContentProps {
-  data: TopLevel;
+  data: Components;
 }
 
 const Content: React.FC<ContentProps> = ({ data }) => {
