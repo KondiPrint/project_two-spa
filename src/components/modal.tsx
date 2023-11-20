@@ -1,5 +1,5 @@
 import style from "@/components/modal.module.scss";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 interface Props {
   children: React.ReactNode;
@@ -10,6 +10,7 @@ interface Props {
 
 export default function Modal({ children, src, alt, email }: Props) {
   const [modalDisplay, setModalDisplay] = useState("none");
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   const openModal = () => {
     setModalDisplay("block");
@@ -17,6 +18,13 @@ export default function Modal({ children, src, alt, email }: Props) {
 
   const closeModal = () => {
     setModalDisplay("none");
+    reset()
+  };
+
+  const reset = () => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
   };
 
   window.onclick = event => {
@@ -24,8 +32,11 @@ export default function Modal({ children, src, alt, email }: Props) {
 
     if (eventTarget?.matches("#modal")) {
       closeModal();
+      reset()
     }
   };
+
+
   return (
     <>
       <figure>
@@ -40,7 +51,7 @@ export default function Modal({ children, src, alt, email }: Props) {
       <div id="modal" style={{ display: modalDisplay }} className={style.modal}>
         <form
           className={`${style.modal_content} ${style.animate}`}
-          method="post"
+          method="post" name="myForm" ref={formRef}
         >
           <div className={style.container}>
             <h2>{children}</h2>
@@ -61,8 +72,11 @@ export default function Modal({ children, src, alt, email }: Props) {
             </div>
 
             <div className={style.modal__btn}>
-              <button type="submit" onClick={closeModal}>
+              <button type="button" onClick={closeModal}>
                 Submit
+              </button>
+              <button type="button" onClick={closeModal}>
+                Close
               </button>
             </div>
           </div>

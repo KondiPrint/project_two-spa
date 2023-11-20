@@ -11,6 +11,7 @@ const getintouch_desktop: React.FC<myData> = ({ data }) => {
   const navData = data.components.navbar;
   const contentData = data.components.getintouch_desktop;
   const contact = data.components.getintouch_desktop.contact;
+  
   return (
     <div className={styles.backgroundcolor}>
       <header className={styles.pageheader}>
