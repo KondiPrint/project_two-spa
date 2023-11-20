@@ -39,20 +39,34 @@
       "img_banner": "../../assets/front-mobil/weba-mobil.getintouch.png",
       "img_banner_alt": "Get in touch-banner",
       "title": "There for you and",
-      "title_2":"care for you",
-      "title_3":"...",
+      "title_2": "care for you",
+      "title_3": "...",
       "text_1": "But I must explain to you how all this mistaken idea of denouncing",
       "text_2": "pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of thegreat explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
       "text_3": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
-      "contact_img_1": "../../assets/front-desktop/whatwedo-small.png",
-      "contact_img_1_alt": "What we do small icon",
-      "contact_img_1_mail": "lt@coolish.com",
-      "contact_img_2": "../../assets/front-desktop/maintainable-small.png",
-      "contact_img__2_alt": "Maintainable small icon",
-      "contact_img_2_mail": "pr@coolish.com",
-      "contact_img_3": "../../assets/front-desktop/getintouch-small.png",
-      "contact_img__3_alt": "Get in touch small icon",
-      "contact_img_3_mail": "mn@coolish.com",
+      "contact": [
+        {
+          "id": "1",
+          "src": "../../../assets/front-desktop/whatwedo-small.png",
+          "alt": "What we do small icon",
+          "email": "lt@coolish.com",
+          "title": "hej med dig"
+        },
+        {
+          "id": "2",
+          "src": "../../../assets/front-desktop/maintainable-small.png",
+          "alt": "Maintainable small icon",
+          "email": "pr@coolish.com",
+          "title": "hej med dig"
+        },
+        {
+          "id": "3",
+          "src": "../../../assets/front-desktop/getintouch-small.png",
+          "alt": "Get in touch small icon",
+          "email": "mn@coolish.com",
+          "title": "hej med dig"
+        }
+      ],
       "getintouch_logo": "../../assets/logo/logo-b.png",
       "getintouch_logo_alt": "Logo-b"
     },
@@ -60,20 +74,34 @@
       "img_banner": "../../assets/front-desktop/front-getintouch-link.png",
       "img_banner_alt": "Get in touch-banner",
       "title": "There for you and",
-      "title_2":"care for you",
-      "title_3":"...",
+      "title_2": "care for you",
+      "title_3": "...",
       "text_1": "But I must explain to you how all this mistaken idea of denouncing",
       "text_2": "pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of thegreat explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are.",
       "text_3": "But I must explain to you how all this mistaken idea of denouncing pleasure and prasing pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
-      "contact_img_1": "../../assets/front-desktop/whatwedo-small.png",
-      "contact_img_1_alt": "What we do small icon",
-      "contact_img_1_mail": "lt@coolish.com",
-      "contact_img_2": "../../assets/front-desktop/maintainable-small.png",
-      "contact_img__2_alt": "Maintainable small icon",
-      "contact_img_2_mail": "pr@coolish.com",
-      "contact_img_3": "../../assets/front-desktop/getintouch-small.png",
-      "contact_img__3_alt": "Get in touch small icon",
-      "contact_img_3_mail": "mn@coolish.com",
+      "contact": [
+        {
+          "id": "1",
+          "src": "../../../assets/front-desktop/whatwedo-small.png",
+          "alt": "What we do small icon",
+          "email": "lt@coolish.com",
+          "title": "hej med dig"
+        },
+        {
+          "id": "2",
+          "src": "../../../assets/front-desktop/maintainable-small.png",
+          "alt": "Maintainable small icon",
+          "email": "pr@coolish.com",
+          "title": "hej med dig"
+        },
+        {
+          "id": "3",
+          "src": "../../../assets/front-desktop/getintouch-small.png",
+          "alt": "Get in touch small icon",
+          "email": "mn@coolish.com",
+          "title": "hej med dig"
+        }
+      ],
       "bottom_right_text": "GetInTouch"
     },
     "maintainable_mobile": {

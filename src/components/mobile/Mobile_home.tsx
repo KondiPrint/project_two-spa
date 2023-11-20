@@ -1,13 +1,13 @@
 import styles from "./mobile.module.scss";
 import Link from "next/link";
-import { Components } from "@/lib/data_interface";
+import { myInterface } from "@/lib/data_interface";
 
-interface ContentProps {
-  data: Components;
+interface myData {
+  data: myInterface;
 }
 
-const Home: React.FC<ContentProps> = ({ data }) => {
-  const contentData = data.components.home_mobile
+const Home: React.FC<myData> = ({ data }) => {
+  const contentData = data.components.home_mobile;
 
   return (
     <main className={styles.backgroundcolor}>
@@ -21,24 +21,24 @@ const Home: React.FC<ContentProps> = ({ data }) => {
           <div>
             <Link href={"/whatwedo"}>
               <img
-              src={contentData.whatwedo_banner}
-              alt={contentData.whatwedo_banner_alt}
+                src={contentData.whatwedo_banner}
+                alt={contentData.whatwedo_banner_alt}
               />
             </Link>
           </div>
           <div>
             <Link href={"/maintainable"}>
               <img
-              src={contentData.maintainable_banner}
-              alt={contentData.maintainable_banner_alt}
+                src={contentData.maintainable_banner}
+                alt={contentData.maintainable_banner_alt}
               />
             </Link>
           </div>
           <div>
             <Link href={"/getintouch"}>
               <img
-              src={contentData.getintouch_banner}
-              alt={contentData.getintouch_banner_alt}
+                src={contentData.getintouch_banner}
+                alt={contentData.getintouch_banner_alt}
               />
             </Link>
           </div>
@@ -51,5 +51,5 @@ const Home: React.FC<ContentProps> = ({ data }) => {
       </section>
     </main>
   );
-}
+};
 export default Home;

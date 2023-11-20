@@ -1,13 +1,14 @@
-import styles from "./desktop.module.scss"
+import styles from "./desktop.module.scss";
+import Modal from "../modal";
 import Link from "next/link";
-import { Components } from "@/lib/data_interface";
+import { myInterface } from "@/lib/data_interface";
 
-interface ContentProps {
-  data: Components;
+interface myData {
+  data: myInterface;
 }
 
-const Home: React.FC<ContentProps> = ({ data }) => {
-  const contentData = data.components.home_desktop
+const Home: React.FC<myData> = ({ data }) => {
+  const contentData = data.components.home_desktop;
 
   return (
     <main className={styles.backgroundcolor}>
@@ -21,24 +22,26 @@ const Home: React.FC<ContentProps> = ({ data }) => {
           <div className={styles.content__img_container}>
             <Link href={"/whatwedo"}>
               <img
-              src={contentData.whatwedo_card}
-              alt={contentData.whatwedo_card_alt}
+                src={contentData.whatwedo_card}
+                alt={contentData.whatwedo_card_alt}
               />
             </Link>
           </div>
           <div className={styles.content__img_container}>
             <Link href={"/maintainable"}>
               <img
-              src={contentData.maintainable_card}
-              alt={contentData.maintainable_card_alt}
+                src={contentData.maintainable_card}
+                alt={contentData.maintainable_card_alt}
               />
             </Link>
           </div>
-          <div className={`${styles.content__img_container} ${styles.bottom_text_anchor}`}>
+          <div
+            className={`${styles.content__img_container} ${styles.bottom_text_anchor}`}
+          >
             <Link href={"/getintouch"}>
               <img
-              src={contentData.getintouch_card}
-              alt={contentData.getintouch_card_alt}
+                src={contentData.getintouch_card}
+                alt={contentData.getintouch_card_alt}
               />
             </Link>
           </div>
@@ -51,5 +54,5 @@ const Home: React.FC<ContentProps> = ({ data }) => {
       </section>
     </main>
   );
-}
+};
 export default Home;
