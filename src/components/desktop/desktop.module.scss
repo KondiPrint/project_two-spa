@@ -1,7 +1,11 @@
 .backgroundcolor {
   height: 100svh;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 35%, rgba(177, 210, 231, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(177, 210, 231, 1) 100%
+  );
 }
 
 .content__section {
@@ -25,6 +29,9 @@
       img {
         object-fit: cover;
         width: 100%;
+        &:hover {
+          scale: 1.03;
+        }
       }
 
       &:last-of-type {
@@ -34,14 +41,13 @@
 
     .bottom_text_anchor {
       position: relative;
-      
     }
 
     .bottom_text {
       position: absolute;
       right: 5px;
       bottom: 0;
-      
+
       div {
         width: 100%;
         width: fit-content;

@@ -50,21 +50,21 @@
           "src": "../../../assets/front-desktop/whatwedo-small.png",
           "alt": "What we do small icon",
           "email": "lt@coolish.com",
-          "title": "hej med dig"
+          "title": "Contact lt@coolish.com with any questions."
         },
         {
           "id": "2",
           "src": "../../../assets/front-desktop/maintainable-small.png",
           "alt": "Maintainable small icon",
           "email": "pr@coolish.com",
-          "title": "hej med dig"
+          "title": "Contact pr@coolish.com with any questions."
         },
         {
           "id": "3",
           "src": "../../../assets/front-desktop/getintouch-small.png",
           "alt": "Get in touch small icon",
           "email": "mn@coolish.com",
-          "title": "hej med dig"
+          "title": "Contact mn@coolish.com with any questions."
         }
       ],
       "getintouch_logo": "../../assets/logo/logo-b.png",
@@ -85,21 +85,21 @@
           "src": "../../../assets/front-desktop/whatwedo-small.png",
           "alt": "What we do small icon",
           "email": "lt@coolish.com",
-          "title": "hej med dig"
+          "title": "Contact lt@coolish.com with any questions."
         },
         {
           "id": "2",
           "src": "../../../assets/front-desktop/maintainable-small.png",
           "alt": "Maintainable small icon",
           "email": "pr@coolish.com",
-          "title": "hej med dig"
+          "title": "Contact pr@coolish.com with any questions."
         },
         {
           "id": "3",
           "src": "../../../assets/front-desktop/getintouch-small.png",
           "alt": "Get in touch small icon",
           "email": "mn@coolish.com",
-          "title": "hej med dig"
+          "title": "Contact mn@coolish.com with any questions."
         }
       ],
       "bottom_right_text": "GetInTouch"

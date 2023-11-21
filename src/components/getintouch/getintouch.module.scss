@@ -89,6 +89,7 @@
     img {
       object-fit: cover;
       width: clamp(80px, 10vw, 140px);
+      cursor: pointer;
     }
 
     p {
